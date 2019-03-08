@@ -1,0 +1,96 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,");
+body,
+html {
+  font-family: Lato;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  grid-column-gap: 36pt;
+  grid-row-gap: 36pt;
+  padding: 36pt;
+}
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    padding: 18pt;
+    grid-column-gap: 18pt;
+    grid-row-gap: 18pt;
+  }
+}
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+p {
+  font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #00f;
+}
+a:hover {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: 700;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: #eee;
+}
+.main .text {
+  flex: 1;
+}
+.main .text p {
+  padding: 0 18pt 36pt 0;
+}
+.main .text p:last-child {
+  margin: 0 0 0 0;
+}
+@media screen and (max-width: 600px) {
+  .main .text p {
+    padding: 0 18pt 18pt 0;
+  }
+}
+.main .image {
+  flex: 1;
+  padding: 0 0 18pt 0;
+  background-image: url("https://i.imgur.com/ysK6tEp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+@media screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .image {
+    height: 400pt;
+  }
+}
+.content li {
+  font-size: 1.5em;
+  margin: 0 0 36pt 0;
+}
+@media screen and (max-width: 600px) {
+  .content li {
+    margin: 0 0 18pt 0;
+  }
+}
+.content li:last-child {
+  margin: 0 0 0 0;
+}
+.cta {
+  font-weight: 700;
+  background-color: #eee;
+}
