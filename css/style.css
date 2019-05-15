@@ -2,6 +2,7 @@ body,
 html {
   font-family: Lato;
   line-height: 1.6;
+  overflow: hidden;
 }
 .overlay {
   width
@@ -112,12 +113,13 @@ a:hover {
   background-color: #eee;
   z-index: 999;
   padding: 5%;
-  -ms-transform: rotate(5deg); /* IE 9 */
-  -webkit-transform: rotate(5deg); /* Safari */
-  transform: rotate(5deg);
+  -ms-transform: rotate(3deg); /* IE 9 */
+  -webkit-transform: rotate(3deg); /* Safari */
+  transform: rotate(3deg);
   -webkit-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
--moz-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
+  overflow: scroll;
 }
 .overlay p {
   padding: 16pt 0 16pt 0;
