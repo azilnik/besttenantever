@@ -3,6 +3,16 @@ html {
   font-family: Lato;
   line-height: 1.6;
 }
+.overlay {
+  width
+}
+.blurred {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+}
 .grid {
   display: grid;
   grid-column-gap: 36pt;
@@ -92,4 +102,23 @@ a:hover {
 .cta {
   font-weight: 700;
   background-color: #eee;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 70%; /* Full width (cover the whole page) */
+  top: 10%; 
+  left: 10%;
+  background-color: #eee;
+  z-index: 999;
+  padding: 5%;
+  -ms-transform: rotate(5deg); /* IE 9 */
+  -webkit-transform: rotate(5deg); /* Safari */
+  transform: rotate(5deg);
+  -webkit-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
+-moz-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
+box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.2);
+}
+.overlay p {
+  padding: 16pt 0 16pt 0;
 }
